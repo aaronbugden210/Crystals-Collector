@@ -3,35 +3,31 @@
 <head>
 	<meta charset = "UTF-8">
 	<title>Crystals Collector</title>
-
 	<link rel = "stylesheet" href = "assets/reset.css">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel = "stylesheet" href= "assets/style.css">
 
 </head>
 <body>
-
-	<div id = "wrapper">
-
-		<div class = "row">
-			<div class = "card cards">
-				<div class = "card-body">
-					<h5 class = "card-title">Crystals Collector</h5>
-
-					<p class = "card-text">
-						By clicking on each gem, your score will increment.
-						Keep clicking on the gems until your score reaches
-						the the number above the gems.
-						If your score goes above this number, you will have
-						lost and the game will reset.
-					</p>
+	<div class = "container">
+		<div class = "row justify-content-xl-center">
+			<div class = "col-xl-4">
+				<div class = "card cards text-white bg-dark">
+					<div class = "card-body">
+						<h5 class = "card-title">Crystals Collector</h5>
+						<p class = "card-text">
+							By clicking on each gem, your score will increment.
+							Keep clicking on the gems until your score reaches
+							the the number above the gems.
+							If your score goes above this number, you will have
+							lost and the game will reset.
+						</p>
+					</div>
 				</div>
 			</div>	
 		</div>
 
-		<div class = "row">
+		<div class = "row justify-content-xl-center">
 			<div class ="card cards">
 				<div class = "card-body">
 					<h5 class = "card-title">Goal</h5>
@@ -40,43 +36,47 @@
 			</div>
 
 			<div class = "card cards">
+				<h5 class = "card-title">Wins & Loses</h5>
 				<div id = "wins"></div>
 				<div id = "loses"></div>
 			</div>
 		</div>
 
-
-
-		<div class = "container">
-
-			<div class = "row">
-				<div class = "col-sm">
-					<div id = "redGem"><img src="assets/images/Red_Gem.png" width="100px" height="100px"></div>
+		<div class = "row justify-content-xl-center">
+			<div class = "col-xl-2 offset-1">
+				<div id = "redGem">
+					<button class="btn btn-dark"><img src="assets/images/Red_Gem.png" width="100px" height="100px"></button>
 				</div>
+			</div>
 
-				<div class = "col-sm">
-					<div id = "greenGem"><img src = "assets/images/Green_Gem.png" width="100px" height="100px"></div>
+			<div class = "col-xl-2 offset-1">
+				<div id = "greenGem">
+					<button class="btn btn-dark"><img src = "assets/images/Green_Gem.png" width="100px" height="100px"></button>
 				</div>
+			</div>
 
-				<div class = "col-sm">
-					<div id = "blueGem"><img src = "assets/images/Blue_Gem.png" width="100px" height="100px"></div>
+			<div class = "col-xl-2 offset-1">
+				<div id = "blueGem">
+					<button class="btn btn-dark"><img src = "assets/images/Blue_Gem.png" width="100px" height="100px"></button>	
 				</div>
+			</div>
 
-				<div class = "col-sm">
-					<div id = "purpleGem"><img src = "assets/images/Purple_Gem.png" width="100px" height="100px"></div>
+			<div class = "col-xl-2 offset-1">
+				<div id = "purpleGem">
+					<button class="btn btn-dark"><img src = "assets/images/Purple_Gem.png" width="100px" height="100px"></button>
 				</div>
 			</div>
 		</div>
-		
-		<div class = "card cards">
-			<div class = "card-body">
-				<div id = "actScore"></div>
+
+		<div class = "row justify-content-xl-center">
+			<div class = "card cards">
+				<h5 class = "card-title">Player Score</h5>
+				<div id = "actScore" placeholder="Points"></div>
 			</div>
-		</div>
+		</div>	
 	</div>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 	<script type = "text/javascript" src = "assets/game.js"></script>
 
 </body>
