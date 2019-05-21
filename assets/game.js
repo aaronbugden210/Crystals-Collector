@@ -72,8 +72,8 @@ function reset()
 }
 
 //Function that checks values of the Gem objects and resets them if they are equal to another Gem objects value
-//Since the first gem will have the first gem (w) is the first one to gain a value,
-//I chose to reset any value other than (w)
+//I chose not to change the value of the redGem (or w variable here) for simplicity sake
+//It didn't make sense to change the value of the first gem since it would be created first
 function checkValues(w, x, y, z)
 {
 	do
